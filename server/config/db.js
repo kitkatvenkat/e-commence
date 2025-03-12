@@ -8,10 +8,13 @@ function databases (){
         if (!process.env.DB) {
             throw new Error("❌ DB_URI is missing in .env file");
         }
-        mongoose.connect(process.env.DB).then((res)=>{
+        mongoose.connect(process.env.DB,{
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }).then((res)=>{
             
             console.log("Database connected");
-            
+
            
             
         }).catch(()=>{
