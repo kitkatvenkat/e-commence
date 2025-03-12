@@ -18,8 +18,29 @@ const userRegister = async (req,res,next) => {
 }
 
 const userRegisterDataGet = async(req, res , next)=>{
-    const Getdata = await userschema.find()
-    res.json(Getdata)
+    try{
+        const Getdata = await userschema.find()
+        
+        if(Getdata&&Getdata.length>0){
+             // If data exists
+             res.status(200).json({
+                success: true,
+                message: "User data fetched successfully",
+                data: getData
+            });
+        }
+        else{
+            res.status(404).json({
+                success: false,
+                message: "No user data found"
+            });
+        }
+
+    }
+    catch(err){
+        console.log(err);
+    }
+   
 }
 
 const userlogin = async(req,res,next)=>{
