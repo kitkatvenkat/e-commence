@@ -1,0 +1,63 @@
+/* 🌟 Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    /* margin-top: 50px; */
+    height: 95vh;
+    background: url("../assets/image/slider-image-1.jpg") no-repeat center center/cover; /* Add Background Image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 🌟 Overlay for Readability */
+  .slider-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* 🌟 Heading & Text */
+  .slider-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .slider-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* 🌟 More Details Button */
+  .slider-button {
+    background-color: #D67D3E;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: 350px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-button:hover {
+    background-color: #b85f2a;
+  }
+  
+  /* 📱 Responsive Adjustments */
+  @media (max-width: 768px) {
+    .slider {
+      height: 60vh;
+    }
+  
+    .slider-overlay h1 {
+      font-size: 2rem;
+    }
+  
+    .slider-overlay p {
+      font-size: 1rem;
+    }
+  }
+  

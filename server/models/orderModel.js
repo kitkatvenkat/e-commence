@@ -14,6 +14,7 @@ const orderSchema = new mongoose.Schema({
     status: { type: String, enum: ["Pending", "Processing", "Shipped", "Delivered", "Cancelled"], default: "Pending" },
     address: {
         street: { type: String, required: true },
+        
         city: { type: String, required: true },
         state: { type: String, required: true },
         zipCode: { type: String, required: true }

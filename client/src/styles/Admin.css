@@ -1,0 +1,123 @@
+/* 🌟 General Admin Navbar */
+.admin-navbar {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🍔 Mobile Menu Button */
+  .menu-btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: #D67D3E;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* 🌟 Admin Profile Section */
+  .admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .admin-user {
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .admin-logout {
+    background-color: #D67D3E;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .admin-logout:hover {
+    background-color: #b85f2a;
+  }
+  
+  /* 🌟 Sidebar */
+  .admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar initially */
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* ✅ Sidebar Open Animation */
+  .admin-sidebar.open {
+    left: 0;
+  }
+  
+  /* Sidebar Links */
+  .admin-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .admin-link:hover {
+    background-color: #334155;
+    transform: scale(1.05);
+  }
+  
+  /* Logout Button */
+  .admin-logout-btn {
+    background-color: #DC2626;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .admin-logout-btn:hover {
+    background-color: #b91c1c;
+  }
+  
+  /* 📱 Responsive Sidebar */
+  @media (max-width: 768px) {
+    .admin-sidebar {
+      width: 220px;
+    }
+  
+    .admin-link {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
